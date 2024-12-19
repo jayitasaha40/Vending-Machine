@@ -1,0 +1,105 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1877" dy="565" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--6" value="&lt;&lt;Interface&gt;&gt;&#xa;VendingMachineState" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="300" y="100" width="290" height="180" as="geometry">
+            <mxRectangle x="300" y="100" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--9" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
+          <mxGeometry y="40" width="290" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--11" value="selectProduct(in product : Product) :: void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
+          <mxGeometry y="48" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-0" value="pressPaymentButton() :: void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--6">
+          <mxGeometry y="74" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-1" value="insertCoin(in coin : Coin) :: void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--6">
+          <mxGeometry y="100" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-2" value="dispenseProduct() :: void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--6">
+          <mxGeometry y="126" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-3" value="DispenseState" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-30" y="100" width="290" height="316" as="geometry">
+            <mxRectangle x="300" y="100" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-9" value="- vendingMachine : VendingMachine" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-3">
+          <mxGeometry y="40" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-4" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-3">
+          <mxGeometry y="66" width="290" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-10" value="- returnChange() :: int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-3">
+          <mxGeometry y="130" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-5" value="+ selectProduct(in product : Product) :: void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-3">
+          <mxGeometry y="156" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-6" value="+ pressPaymentButton() :: void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-3">
+          <mxGeometry y="182" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-7" value="+ insertCoin(in coin : Coin) :: void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-3">
+          <mxGeometry y="208" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-8" value="+ dispenseProduct() :: void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-3">
+          <mxGeometry y="234" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-11" value="IdleState" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="340" width="290" height="316" as="geometry">
+            <mxRectangle x="300" y="100" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-12" value="- vendingMachine : VendingMachine" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-11">
+          <mxGeometry y="40" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-13" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-11">
+          <mxGeometry y="66" width="290" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-15" value="+ selectProduct(in product : Product) :: void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-11">
+          <mxGeometry y="130" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-16" value="+ pressPaymentButton() :: void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-11">
+          <mxGeometry y="156" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-17" value="+ insertCoin(in coin : Coin) :: void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-11">
+          <mxGeometry y="182" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-18" value="+ dispenseProduct() :: void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-11">
+          <mxGeometry y="208" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-19" value="PaymentState" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="650" y="50" width="290" height="316" as="geometry">
+            <mxRectangle x="300" y="100" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-20" value="- vendingMachine : VendingMachine" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-19">
+          <mxGeometry y="40" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-21" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-19">
+          <mxGeometry y="66" width="290" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-22" value="- checkPaymentStatus() :: void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-19">
+          <mxGeometry y="130" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-23" value="+ selectProduct(in product : Product) :: void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-19">
+          <mxGeometry y="156" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-24" value="+ pressPaymentButton() :: void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-19">
+          <mxGeometry y="182" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-25" value="+ insertCoin(in coin : Coin) :: void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-19">
+          <mxGeometry y="208" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ICooJDKsXDVWxrnS9RKx-26" value="+ dispenseProduct() :: void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ICooJDKsXDVWxrnS9RKx-19">
+          <mxGeometry y="234" width="290" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
